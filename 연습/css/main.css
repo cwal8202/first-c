@@ -1,0 +1,22 @@
+.container {
+  /* 제일 위에 있는것. 크기 1200맞추고 줄임=flex */
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+.header .top_banner {
+  /* 왜 top_banner에 효과를 주지? container에 효과주면 안되냐? */
+  border-bottom: 1px solid #111;
+  line-height: 40px;
+}
+
+.header .top_banner span {
+  margin: 0 0 0 auto;
+}
+
+.header .top_banner a {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
