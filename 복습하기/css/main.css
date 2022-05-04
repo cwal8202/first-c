@@ -1,0 +1,96 @@
+/* TOP BANNER 헤더부분의 위치 즉 레이아웃 작업을 함. */
+.container {
+  display: flex;
+  /* display: flex;는 박스의 높이를 컨텐츠 높이만큼 줄인다or 맞춘다. */
+  width: 1200px;
+  margin: 0 auto;
+  /* margin 0 auto;는 박스를 중앙으로 이동시킨다. */
+}
+/* 이 코드에선 박스의 크기를 1200px로 맞추고 박스높이를 flex시켜 박스들 사이의 틈을 없앴고 margin을 이용해서 박스를 중간으로 뒀다.*/
+
+.header .top_banner {
+  border-bottom: 1px solid #ddd;
+  /* 배너박스 밑에 줄을 그었다. */
+  line-height: 40px;
+  /* 제일 위 박스 높이를 설정했다. 원래보다 더 높아짐. */
+}
+
+.header .top_banner span {
+  margin: 0 0 0 auto;
+  /* span의 글이 오른쪽으로 붙여졌다. */
+}
+
+.header .top_banner a {
+  /* 제일위 배너의 오른쪽 아이콘 */
+  margin: 0 0 0 10px;
+  padding: 0 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.header .gnb {
+  /* 위의 메뉴들을 오른쪽으로 옮기는 작업을 함. */
+  margin: 0 0 0 auto;
+}
+
+.header .gnb > ul {
+  display: flex;
+  /* ul안의 li박스들 즉 상단의 메뉴들이 세로로 배열되어 있었는데 가로로 배열되게 만들었다. */
+  gap: 30px;
+  line-height: 90px;
+  font-size: 19px;
+  font-weight: 500;
+}
+/* TOP BANNER의 위치를 다 정리했다. */
+
+/* 메인 비주얼 시작 */
+
+.main_visual {
+  /* 뒷 배경 삽입하는 작업을 함. */
+  position: relative;
+  height: 600px;
+  background: url(../img/main_slider01.jpg) no-repeat center top/cover;
+}
+
+.main_visual .slogan {
+  position: absolute;
+  top: 100px;
+  right: 600px;
+}
+.main_slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+}
+
+.main_slider h3 {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0 0 30px 0;
+  line-height: 80px;
+  /* line-height는 줄간격이다. */
+  background: linear-gradient(to right top, #0a96ba, #032777, #333333);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.main_slider strong {
+  display: block;
+  margin: 0 0 20px 0;
+  color: #0dcaf0;
+}
+
+.main_slider .slick-dots {
+  padding: 30px 0 0 0;
+  /* 글이랑 점들이 붙어있어서 30px정도 분리해놓았다. */
+}
+
+.main_slider .slick-dots li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 80px;
+  height: 4px;
+  background: #333;
+}
